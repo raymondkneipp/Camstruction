@@ -3,8 +3,18 @@ import { createGlobalStyle } from "styled-components";
 import tw, { theme, GlobalStyles as BaseStyles } from "twin.macro";
 
 const CustomStyles = createGlobalStyle`
+
+  ::selection {
+    background: ${theme`colors.red.700`};
+    color: white;
+  }
+  ::-moz-selection {
+    background: ${theme`colors.red.700`};
+    color: white;
+  }
+
   body {
-    -webkit-tap-highlight-color: ${theme`colors.purple.500`};
+    -webkit-tap-highlight-color: transparent;
     ${tw`antialiased`}
   }
 

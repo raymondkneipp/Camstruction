@@ -82,8 +82,8 @@ const Day = ({ date, handleDateSelection, selected }) => {
   return (
     <button
       css={[
-        tw`p-2 sm:h-16 md:h-16 transition-all hocus:(outline-none ring ring-blue-700 ring-opacity-50) cursor-pointer flex items-start bg-white border-gray-200 border text-gray-600`,
-        selected && tw`bg-blue-700 text-white`,
+        tw`p-2 sm:h-16 md:h-16 transition-all hocus:(outline-none ring ring-red-700 ring-opacity-50) cursor-pointer flex items-start bg-white border-gray-200 border text-gray-600 font-serif`,
+        selected && tw`bg-red-700 text-white`,
       ]}
       onClick={() => handleOnClick(date)}
     >
@@ -107,11 +107,11 @@ const Calendar = ({ date, handleDateSelection, dateOfQuote }) => {
 
   return (
     <div tw="grid grid-cols-5 gap-2">
-      <h5 tw="font-medium text-black text-center">Mon</h5>
-      <h5 tw="font-medium text-black text-center">Tue</h5>
-      <h5 tw="font-medium text-black text-center">Wed</h5>
-      <h5 tw="font-medium text-black text-center">Thu</h5>
-      <h5 tw="font-medium text-black text-center">Fri</h5>
+      <h5 tw="font-medium text-black text-center font-serif">Mon</h5>
+      <h5 tw="font-medium text-black text-center font-serif">Tue</h5>
+      <h5 tw="font-medium text-black text-center font-serif">Wed</h5>
+      <h5 tw="font-medium text-black text-center font-serif">Thu</h5>
+      <h5 tw="font-medium text-black text-center font-serif">Fri</h5>
 
       {date.getDay() != 6 && date.getDay() != 5 && (
         <>
@@ -154,7 +154,7 @@ const Calendar = ({ date, handleDateSelection, dateOfQuote }) => {
 const DatePicker = ({ handleDateSelection, dateOfQuote }) => {
   return (
     <div>
-      <h4 tw="font-medium text-xl text-center my-8">
+      <h4 tw="font-medium text-xl text-center my-8 font-sans">
         {getWeekday(today)}, {getMonthName(today)} {today.getDate()}
         <sup>{ordinal_suffix_of(today.getDate())}</sup>
       </h4>

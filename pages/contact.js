@@ -45,21 +45,24 @@ const Contact = () => {
 
   return (
     <Layout title="Contact Us">
-      <div tw="bg-blue-700 mt-36 flex-1">
+      <h1 tw="text-3xl sm:text-5xl md:text-6xl lg:text-7xl my-10 font-medium font-sans text-center">
+        Contact Us
+      </h1>
+      <div tw="bg-red-700 mt-36 flex-1">
         <StyledContainer>
           <form tw="bg-white shadow-lg p-8 -mt-36" onSubmit={contactUs}>
-            <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-black my-2 text-center">
+            <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-black my-2 text-center font-sans">
               Send A Message
             </h2>
 
             <div tw="flex flex-col">
-              <label htmlFor="name" tw="text-gray-500 text-sm mb-2">
+              <label htmlFor="name" tw="text-gray-500 text-sm mb-2 font-serif">
                 First Name
               </label>
               <input
                 type="text"
                 id="name"
-                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
                 placeholder="John"
                 required
                 value={name}
@@ -68,13 +71,13 @@ const Contact = () => {
             </div>
 
             <div tw="flex flex-col">
-              <label htmlFor="email" tw="text-gray-500 text-sm mb-2">
+              <label htmlFor="email" tw="text-gray-500 text-sm mb-2 font-serif">
                 Email
               </label>
               <input
                 type="email"
                 id="email"
-                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
                 placeholder="john@example.com"
                 required
                 value={email}
@@ -83,13 +86,13 @@ const Contact = () => {
             </div>
 
             <div tw="flex flex-col">
-              <label htmlFor="msg" tw="text-gray-500 text-sm mb-2">
+              <label htmlFor="msg" tw="text-gray-500 text-sm mb-2 font-serif">
                 Message
               </label>
               <textarea
                 id="msg"
                 rows="4"
-                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4 resize-none"
+                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif resize-none"
                 placeholder="Type your message here..."
                 required
                 value={msg}
@@ -109,17 +112,17 @@ const Contact = () => {
 
             <input
               type="submit"
-              tw="bg-white text-blue-700 border border-blue-700 transition rounded-full py-1 px-4 text-lg inline-block hocus:(outline-none bg-blue-700 text-white) my-2 cursor-pointer self-start"
+              tw="bg-white text-red-700 border border-red-700 transition rounded-full py-1 px-4 text-lg inline-block hocus:(outline-none bg-red-700 text-white) my-2 cursor-pointer self-start font-serif"
               value="Send Message"
             />
           </form>
 
           <div>
             <section tw="bg-black bg-opacity-25 p-8">
-              <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-gray-200 mb-4">
-                Contact Us
+              <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-gray-200 mb-4 font-sans">
+                Reach Out To Us
               </h2>
-              <ul tw="text-gray-300 whitespace-nowrap grid gap-4">
+              <ul tw="text-gray-300 whitespace-nowrap grid gap-4 font-serif">
                 <li tw="grid grid-flow-col auto-cols-min items-center gap-4">
                   <Image
                     src="/icons/envelope-solid.svg"
@@ -128,7 +131,7 @@ const Contact = () => {
                     layout="fixed"
                     alt="Email"
                   />
-                  <span tw="select-all">help@plusdrainage.com</span>
+                  <span tw="select-all">camrenworkemail@gmail.com</span>
                 </li>
                 <li tw="grid grid-flow-col auto-cols-min items-center gap-4">
                   <Image
@@ -138,7 +141,7 @@ const Contact = () => {
                     layout="fixed"
                     alt="Phone number"
                   />
-                  <span tw="select-all">(513) 455-0289</span>
+                  <span tw="select-all">(513) 828-5801</span>
                 </li>
                 <li tw="grid grid-flow-col auto-cols-min items-center gap-4">
                   <Image
@@ -148,22 +151,21 @@ const Contact = () => {
                     layout="fixed"
                     alt="Location"
                   />
-                  Serving Greater Cincinnati, Northern Kentucky and Dayton
-                  Markets.
+                  Serving Cincinnati And Florence
                 </li>
               </ul>
             </section>
 
             <div tw="grid grid-flow-col items-center justify-center gap-8 p-8">
               <a
-                href="mailto:help@plusdrainage.com"
-                tw="bg-blue-700 text-white border border-white transition rounded-full py-1 px-4 text-lg inline-block hocus:(outline-none bg-white text-blue-700)"
+                href="mailto:camrenworkemail@gmail.com"
+                tw="bg-red-700 text-white border border-white transition rounded-full py-1 px-4 text-lg inline-block hocus:(outline-none bg-white text-red-700) font-serif"
               >
                 Email Us
               </a>
               <a
-                href="tel:(513) 455-0289"
-                tw="bg-blue-700 text-white border border-white transition rounded-full py-1 px-4 text-lg inline-block hocus:(outline-none bg-white text-blue-700)"
+                href="tel:(513) 828-5801"
+                tw="bg-red-700 text-white border border-white transition rounded-full py-1 px-4 text-lg inline-block hocus:(outline-none bg-white text-red-700) font-serif"
               >
                 Call Now
               </a>

@@ -1,15 +1,6 @@
 import GlobalStyles from "./../components/GlobalStyles";
 import tw from "twin.macro";
 
-// const App = ({ Component, pageProps }) => (
-//   <div>
-//     <GlobalStyles />
-//     <Component {...pageProps} />
-//   </div>
-// );
-
-// export default App;
-
 import { SwitchTransition, Transition } from "react-transition-group";
 
 function MyApp({ Component, pageProps, router }) {

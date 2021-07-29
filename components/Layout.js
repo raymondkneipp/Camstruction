@@ -5,63 +5,30 @@ import Alert from "../components/Alert";
 import tw from "twin.macro";
 
 const Layout = ({ children, title }) => {
+  const description = "Renovation And Construction Experts in Cincinnati, OH";
+  // Remodeling vs renovation
+  // Construction?
   return (
     <div>
       <Head>
-        <title>Plus Drainage | {title}</title>
+        <title>
+          {description} | {title} | Cam'struction Renovation
+        </title>
 
-        <meta name="title" content="Plus Drainage" />
         <meta
           name="description"
-          content="Plus Drainage is your professional drainage solution with the personal touch of a local company. Our engineers and employees have a combined 40+ years in this market, delivering solutions to drainage issues."
-        />
+          content="Remodeling and construction team with over eight years of experience."
+        ></meta>
 
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://www.https://www.plusdrainage.com/"
-        />
-        <meta property="og:title" content="Plus Drainage" />
-        <meta
-          property="og:description"
-          content="Plus Drainage is your professional drainage solution with the personal touch of a local company. Our engineers and employees have a combined 40+ years in this market, delivering solutions to drainage issues."
-        />
-        {/* <meta property="og:image" content="/images/bg-logo.jpg" /> */}
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://www.https://www.plusdrainage.com/"
-        />
-        <meta property="twitter:title" content="Plus Drainage" />
-        <meta
-          property="twitter:description"
-          content="Plus Drainage is your professional drainage solution with the personal touch of a local company. Our engineers and employees have a combined 40+ years in this market, delivering solutions to drainage issues."
-        />
-        {/* <meta property="twitter:image" content="/images/bg-logo.jpg"></meta> */}
-
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto+Slab&display=swap"
+          rel="stylesheet"
         />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#2b5797" />
-        <meta name="theme-color" content="#ffffff" />
-
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
           defer
@@ -77,7 +44,6 @@ const Layout = ({ children, title }) => {
         <Navbar />
         <main tw="flex-1 flex flex-col">{children}</main>
       </div>
-
       <Footer />
     </div>
   );

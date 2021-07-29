@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect } from "react";
 import tw from "twin.macro";
 import Container from "./Container";
@@ -43,24 +44,31 @@ const ServicesColumn = () => {
   return (
     <StyledContainer>
       <ServiceItem
-        image="7.jpeg"
-        header="Yard Drainage"
-        subheader="Lorem ipsum dolor"
-        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        image="kitchen.jpg"
+        header="Kitchen Remodeling"
+        subheader="Let Us Build Your Perfect Kitchen"
+        paragraph="Whether you are looking for a sleek modern look or a rustic homely feel, We will help you create the perfect kitchen of your dreams."
       />
       <ServiceItem
-        image="5.jpeg"
-        header="Basement Waterproofing"
-        subheader="Lorem ipsum dolor"
-        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        image="bath.jpg"
+        header="Bathroom Remodeling"
+        subheader="Create The Ultimate Bathroom"
+        paragraph="We can bring life back to your bathroom with new plumbing, electrical, lighting, tile, and cabinetry."
         flip
       />
       <ServiceItem
-        image="1.jpeg"
-        header="Downspout Water Management"
-        subheader="Lorem ipsum dolor"
-        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        image="decking.jpg"
+        header="Decking And Patios"
+        subheader="Bring Life To Your Backyard"
+        paragraph="Create the perfect outdoor living space that's sure to leave a lasting impression."
       />
+      <div tw="mx-auto">
+        <Link href="/services" passHref>
+          <a tw="text-red-700 font-serif text-center hocus:(underline outline-none) mb-8">
+            View All Services
+          </a>
+        </Link>
+      </div>
     </StyledContainer>
   );
 };

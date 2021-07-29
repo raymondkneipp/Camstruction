@@ -10,16 +10,16 @@ const Steps = ({ steps = ["1", "2", "3"], currentStep }) => {
         >
           <div
             css={[
-              tw`h-8 w-8 font-medium rounded-full flex items-center justify-center border border-gray-200 text-gray-500`,
-              currentStep > i && tw`bg-blue-700 text-white`,
+              tw`h-8 w-8 font-medium rounded-full flex items-center justify-center border border-gray-200 text-gray-500 font-serif`,
+              currentStep > i && tw`bg-red-700 text-white`,
             ]}
           >
             {i + 1}
           </div>
           <span
             css={[
-              tw`text-gray-500 whitespace-nowrap`,
-              currentStep > i && tw`text-blue-700`,
+              tw`text-gray-500 whitespace-nowrap font-serif`,
+              currentStep > i && tw`text-red-700`,
             ]}
           >
             {step}

@@ -9,8 +9,8 @@ const TimeItem = ({ time, selectedTime, onSelection, autoFocus }) => {
   return (
     <button
       css={[
-        tw`p-2 transition-all hocus:(outline-none ring ring-blue-700 ring-opacity-50) cursor-pointer flex items-center justify-center bg-white border-gray-200 border text-gray-600`,
-        selectedTime == time && tw`bg-blue-700 text-white`,
+        tw`p-2 transition-all hocus:(outline-none ring ring-red-700 ring-opacity-50) cursor-pointer flex items-center justify-center bg-white border-gray-200 border text-gray-600 font-serif`,
+        selectedTime == time && tw`bg-red-700 text-white`,
       ]}
       onClick={() => handleOnClick()}
       autoFocus={autoFocus}
@@ -31,12 +31,24 @@ const TimePicker = ({ timeOfQuote, handleTimeSelection }) => {
   return (
     <div tw="grid gap-4 mt-8 sm:grid-cols-3 items-start">
       <div tw="grid gap-2 items-start">
-        <h6 tw="font-medium text-black text-center">Morning</h6>
+        <h6 tw="font-medium text-black text-center font-sans">Morning</h6>
+        <TimeItem
+          time={"8:00 AM"}
+          selectedTime={selectedTime}
+          onSelection={(t) => setTime(t)}
+          autoFocus
+        />
+
+        <TimeItem
+          time={"9:00 AM"}
+          selectedTime={selectedTime}
+          onSelection={(t) => setTime(t)}
+        />
+
         <TimeItem
           time={"10:00 AM"}
           selectedTime={selectedTime}
           onSelection={(t) => setTime(t)}
-          autoFocus
         />
 
         <TimeItem
@@ -47,7 +59,7 @@ const TimePicker = ({ timeOfQuote, handleTimeSelection }) => {
       </div>
 
       <div tw="grid gap-2 items-start">
-        <h6 tw="font-medium text-black text-center">Afternoon</h6>
+        <h6 tw="font-medium text-black text-center font-sans">Afternoon</h6>
         <TimeItem
           time={"12:00 PM"}
           selectedTime={selectedTime}
@@ -80,9 +92,15 @@ const TimePicker = ({ timeOfQuote, handleTimeSelection }) => {
       </div>
 
       <div tw="grid gap-2 items-start">
-        <h6 tw="font-medium text-black text-center">Evening</h6>
+        <h6 tw="font-medium text-black text-center font-sans">Evening</h6>
         <TimeItem
           time={"5:00 PM"}
+          selectedTime={selectedTime}
+          onSelection={(t) => setTime(t)}
+        />
+
+        <TimeItem
+          time={"6:00 PM"}
           selectedTime={selectedTime}
           onSelection={(t) => setTime(t)}
         />

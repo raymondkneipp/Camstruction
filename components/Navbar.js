@@ -28,12 +28,11 @@ const Navbar = () => {
           <a tw="grid grid-flow-col items-center gap-4 text-lg sm:text-xl font-bold focus:outline-none focus:underline">
             <Image
               src="/images/logo.svg"
-              layout="fixed"
-              width={50}
-              height={50}
-              alt="Plus Drainage"
+              layout="intrinsic"
+              width={300}
+              height={100}
+              alt="Camstruction Renovation"
             />
-            Plus Drainage
           </a>
         </Link>
 
@@ -71,7 +70,7 @@ const Navbar = () => {
           <li className="listItem" tw="flex">
             <Link href="/" passHref>
               <a
-                tw="text-gray-500 hocus:(text-black outline-none after:w-6) transition after:(transition-all w-0 h-0.5 bg-black content block rounded-full) flex-1 flex flex-col items-start"
+                tw="text-gray-500 hocus:(text-black outline-none after:w-6) transition after:(transition-all w-0 h-0.5 bg-black content block rounded-full) flex-1 flex flex-col items-start font-serif"
                 css={[
                   router.pathname == "/" &&
                     tw`text-black after:(w-6 h-0.5 bg-black content block) hocus:(after:(w-0))`,
@@ -84,7 +83,7 @@ const Navbar = () => {
           <li className="listItem" tw="flex">
             <Link href="/services" passHref>
               <a
-                tw="text-gray-500 hocus:(text-black outline-none after:w-6) transition after:(transition-all w-0 h-0.5 bg-black content block rounded-full) flex-1 flex flex-col items-start"
+                tw="text-gray-500 hocus:(text-black outline-none after:w-6) transition after:(transition-all w-0 h-0.5 bg-black content block rounded-full) flex-1 flex flex-col items-start font-serif"
                 css={[
                   router.pathname == "/services" &&
                     tw`text-black after:(w-6 h-0.5 bg-black content block) hocus:(after:(w-0))`,
@@ -97,7 +96,7 @@ const Navbar = () => {
           <li className="listItem" tw="flex">
             <Link href="/about" passHref>
               <a
-                tw="text-gray-500 hocus:(text-black outline-none after:w-6) transition after:(transition-all w-0 h-0.5 bg-black content block rounded-full) flex-1 flex flex-col items-start"
+                tw="text-gray-500 hocus:(text-black outline-none after:w-6) transition after:(transition-all w-0 h-0.5 bg-black content block rounded-full) flex-1 flex flex-col items-start font-serif"
                 css={[
                   router.pathname == "/about" &&
                     tw`text-black after:(w-6 h-0.5 bg-black content block) hocus:(after:(w-0))`,
@@ -110,10 +109,10 @@ const Navbar = () => {
           <li className="listItem">
             <Link href="/contact" passHref>
               <a
-                tw="text-blue-700 border border-blue-700 rounded-full py-1 px-4 transition duration-150 hover:bg-blue-700 hover:text-white focus:bg-blue-700 focus:text-white focus:outline-none inline-block"
+                tw="text-red-700 border border-red-700 rounded-full py-1 px-4 transition duration-150 hover:bg-red-700 hover:text-white focus:bg-red-700 focus:text-white focus:outline-none inline-block font-serif"
                 css={[
                   router.pathname == "/contact" &&
-                    tw` bg-blue-700 text-white hover:text-blue-700 hover:bg-white focus:bg-white focus:text-blue-700 focus:outline-none`,
+                    tw` bg-red-700 text-white hover:text-red-700 hover:bg-white focus:bg-white focus:text-red-700 focus:outline-none`,
                 ]}
               >
                 Contact

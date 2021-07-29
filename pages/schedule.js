@@ -67,14 +67,18 @@ const Quote = () => {
   };
 
   return (
-    <Layout title="Schedule Service Quote">
+    <Layout title="Schedule Quote">
+      <h1 tw="text-3xl sm:text-5xl md:text-6xl lg:text-7xl my-10 font-medium font-sans text-center">
+        Get An Estimate
+      </h1>
+
       {step != 4 ? (
         <StyledContainer>
           <div tw="border-gray-200 border p-8">
-            <h4 tw="font-medium text-xl text-center mb-8">
-              Drainage Service Quote
+            <h4 tw="font-medium text-xl text-center mb-8 font-sans">
+              Renovation Quote
             </h4>
-            <ul tw="grid gap-4">
+            <ul tw="grid gap-4 font-serif">
               <li tw="grid gap-4 grid-flow-col auto-cols-min whitespace-nowrap items-center">
                 <Image
                   src="/icons/iconmonstr-tag-21.svg"
@@ -161,7 +165,7 @@ const Quote = () => {
             <div tw="flex flex-row-reverse items-center justify-between my-4">
               {/* Reverse order so next button is next in tab index */}
               <button
-                tw="disabled:(border-gray-200 text-gray-500 cursor-not-allowed bg-white hocus:(outline-none border-gray-200 text-gray-500 cursor-not-allowed bg-white)) transition bg-white border-blue-700 text-blue-700 border rounded-full py-1 px-4 hocus:(bg-blue-700 text-white outline-none)"
+                tw="disabled:(border-gray-200 text-gray-500 cursor-not-allowed bg-white hocus:(outline-none border-gray-200 text-gray-500 cursor-not-allowed bg-white)) transition bg-white border-red-700 text-red-700 border rounded-full py-1 px-4 hocus:(bg-red-700 text-white outline-none) font-serif"
                 disabled={
                   (step == 1 && dateOfQuote == null) ||
                   (step == 2 && timeOfQuote == null) ||
@@ -179,7 +183,7 @@ const Quote = () => {
               </button>
 
               <button
-                tw="disabled:(text-gray-500 cursor-not-allowed hocus:(outline-none no-underline cursor-not-allowed)) border-white border transition text-black rounded-full hocus:(underline outline-none)"
+                tw="disabled:(text-gray-500 cursor-not-allowed hocus:(outline-none no-underline cursor-not-allowed)) border-white border transition text-black rounded-full hocus:(underline outline-none) font-serif"
                 disabled={step <= 1}
                 onClick={(e) => {
                   e.target.blur();
@@ -194,23 +198,26 @@ const Quote = () => {
       ) : (
         <Container>
           <div tw="p-8 max-w-lg mx-auto shadow-lg">
-            <h4 tw="font-medium text-xl text-center mb-2">
-              Drainage Service Quote
+            <h4 tw="font-medium text-xl text-center mb-2 font-sans">
+              Renovation Quote
             </h4>
 
-            <p tw="text-base font-light text-gray-500 mb-8 text-center">
+            <p tw="text-base font-light text-gray-500 mb-8 text-center font-serif">
               Confirm the information is correct
             </p>
 
             <div tw="sm:(grid grid-flow-col gap-4)">
               <div tw="flex flex-col">
-                <label htmlFor="cost" tw="text-gray-500 text-sm mb-2">
+                <label
+                  htmlFor="cost"
+                  tw="text-gray-500 text-sm mb-2 font-serif"
+                >
                   Cost
                 </label>
                 <input
                   type="text"
                   id="cost"
-                  tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+                  tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
                   value="Free"
                   readOnly
                   required
@@ -218,13 +225,16 @@ const Quote = () => {
               </div>
 
               <div tw="flex flex-col">
-                <label htmlFor="duration" tw="text-gray-500 text-sm mb-2">
+                <label
+                  htmlFor="duration"
+                  tw="text-gray-500 text-sm mb-2 font-serif"
+                >
                   Duration
                 </label>
                 <input
                   type="text"
                   id="duration"
-                  tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+                  tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
                   value="1 hour"
                   readOnly
                   required
@@ -234,13 +244,16 @@ const Quote = () => {
 
             <div tw="sm:(grid grid-flow-col gap-4)">
               <div tw="flex flex-col">
-                <label htmlFor="date" tw="text-gray-500 text-sm mb-2">
+                <label
+                  htmlFor="date"
+                  tw="text-gray-500 text-sm mb-2 font-serif"
+                >
                   Date
                 </label>
                 <input
                   type="text"
                   id="date"
-                  tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+                  tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
                   value={`${
                     dateOfQuote.getMonth() + 1
                   } / ${dateOfQuote.getDate()} / ${dateOfQuote.getFullYear()}`}
@@ -250,13 +263,16 @@ const Quote = () => {
               </div>
 
               <div tw="flex flex-col">
-                <label htmlFor="time" tw="text-gray-500 text-sm mb-2">
+                <label
+                  htmlFor="time"
+                  tw="text-gray-500 text-sm mb-2 font-serif"
+                >
                   Time
                 </label>
                 <input
                   type="text"
                   id="time"
-                  tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+                  tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
                   value={timeOfQuote}
                   readOnly
                   required
@@ -265,13 +281,13 @@ const Quote = () => {
             </div>
 
             <div tw="flex flex-col">
-              <label htmlFor="name" tw="text-gray-500 text-sm mb-2">
+              <label htmlFor="name" tw="text-gray-500 text-sm mb-2 font-serif">
                 Name
               </label>
               <input
                 type="text"
                 id="name"
-                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
                 value={name}
                 readOnly
                 required
@@ -279,13 +295,13 @@ const Quote = () => {
             </div>
 
             <div tw="flex flex-col">
-              <label htmlFor="email" tw="text-gray-500 text-sm mb-2">
+              <label htmlFor="email" tw="text-gray-500 text-sm mb-2 font-serif">
                 Email
               </label>
               <input
                 type="email"
                 id="email"
-                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
                 value={email}
                 readOnly
                 required
@@ -293,13 +309,13 @@ const Quote = () => {
             </div>
 
             <div tw="flex flex-col">
-              <label htmlFor="phone" tw="text-gray-500 text-sm mb-2">
+              <label htmlFor="phone" tw="text-gray-500 text-sm mb-2 font-serif">
                 Phone Number
               </label>
               <input
                 type="tel"
                 id="phone"
-                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
                 value={phone || "Not Provided"}
                 readOnly
                 required
@@ -307,13 +323,16 @@ const Quote = () => {
             </div>
 
             <div tw="flex flex-col">
-              <label htmlFor="address" tw="text-gray-500 text-sm mb-2">
+              <label
+                htmlFor="address"
+                tw="text-gray-500 text-sm mb-2 font-serif"
+              >
                 Address
               </label>
               <input
                 type="text"
                 id="address"
-                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
                 value={`${street} ${city}, Ohio`}
                 readOnly
                 required
@@ -321,13 +340,13 @@ const Quote = () => {
             </div>
 
             <div tw="flex flex-col">
-              <label htmlFor="msg" tw="text-gray-500 text-sm mb-2">
+              <label htmlFor="msg" tw="text-gray-500 text-sm mb-2 font-serif">
                 Message
               </label>
               <textarea
                 id="msg"
                 rows="4"
-                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4 resize-none"
+                tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif resize-none"
                 value={msg || "No Message"}
                 readOnly
                 required
@@ -337,7 +356,7 @@ const Quote = () => {
             <div tw="flex flex-row-reverse items-center justify-between">
               {/* Reverse order so next button is next in tab index */}
               <button
-                tw="disabled:(border-gray-200 text-gray-500 cursor-not-allowed bg-white hocus:(outline-none border-gray-200 text-gray-500 cursor-not-allowed bg-white)) transition bg-white border-blue-700 text-blue-700 border rounded-full py-1 px-4 hocus:(bg-blue-700 text-white outline-none)"
+                tw="disabled:(border-gray-200 text-gray-500 cursor-not-allowed bg-white hocus:(outline-none border-gray-200 text-gray-500 cursor-not-allowed bg-white)) transition bg-white border-red-700 text-red-700 border rounded-full py-1 px-4 hocus:(bg-red-700 text-white outline-none) font-serif"
                 onClick={(e) => {
                   scheduleQuote(e);
                 }}
@@ -346,7 +365,7 @@ const Quote = () => {
               </button>
 
               <button
-                tw="disabled:(text-gray-500 cursor-not-allowed hocus:(outline-none no-underline cursor-not-allowed)) border-white border transition text-black rounded-full hocus:(underline outline-none)"
+                tw="disabled:(text-gray-500 cursor-not-allowed hocus:(outline-none no-underline cursor-not-allowed)) border-white border transition text-black rounded-full hocus:(underline outline-none) font-serif"
                 disabled={step <= 1}
                 onClick={(e) => {
                   e.target.blur();

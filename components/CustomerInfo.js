@@ -37,13 +37,13 @@ const CustomerInfo = ({ setInvalid, info, setInfo }) => {
   return (
     <form tw="mt-8">
       <div tw="flex flex-col">
-        <label htmlFor="name" tw="text-gray-500 text-sm mb-2">
+        <label htmlFor="name" tw="text-gray-500 text-sm mb-2 font-serif">
           Name
         </label>
         <input
           type="text"
           id="name"
-          tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+          tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
           placeholder="John Wick"
           required
           autoFocus
@@ -53,13 +53,13 @@ const CustomerInfo = ({ setInvalid, info, setInfo }) => {
       </div>
 
       <div tw="flex flex-col">
-        <label htmlFor="email" tw="text-gray-500 text-sm mb-2">
+        <label htmlFor="email" tw="text-gray-500 text-sm mb-2 font-serif">
           Email
         </label>
         <input
           type="email"
           id="email"
-          tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+          tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
           placeholder="john@example.com"
           required
           value={email}
@@ -68,13 +68,13 @@ const CustomerInfo = ({ setInvalid, info, setInfo }) => {
       </div>
 
       <div tw="flex flex-col">
-        <label htmlFor="phone" tw="text-gray-500 text-sm mb-2">
+        <label htmlFor="phone" tw="text-gray-500 text-sm mb-2 font-serif">
           Phone Number (optional)
         </label>
         <input
           type="tel"
           id="phone"
-          tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+          tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
           placeholder="123-456-7890"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
@@ -82,13 +82,13 @@ const CustomerInfo = ({ setInvalid, info, setInfo }) => {
       </div>
 
       <div tw="flex flex-col">
-        <label htmlFor="street" tw="text-gray-500 text-sm mb-2">
+        <label htmlFor="street" tw="text-gray-500 text-sm mb-2 font-serif">
           Street
         </label>
         <input
           type="text"
           id="street"
-          tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+          tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
           placeholder="123 Main St"
           required
           value={street}
@@ -98,13 +98,13 @@ const CustomerInfo = ({ setInvalid, info, setInfo }) => {
 
       <div tw="sm:(grid grid-flow-col gap-4)">
         <div tw="flex flex-col">
-          <label htmlFor="city" tw="text-gray-500 text-sm mb-2">
+          <label htmlFor="city" tw="text-gray-500 text-sm mb-2 font-serif">
             City
           </label>
           <input
             type="text"
             id="city"
-            tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
+            tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
             required
             value={city}
             onChange={(e) => setCity(e.target.value)}
@@ -112,14 +112,14 @@ const CustomerInfo = ({ setInvalid, info, setInfo }) => {
         </div>
 
         <div tw="flex flex-col">
-          <label htmlFor="state" tw="text-gray-500 text-sm mb-2">
+          <label htmlFor="state" tw="text-gray-500 text-sm mb-2 font-serif">
             State
           </label>
           <input
             type="text"
             id="state"
-            tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) mb-4"
-            value="Ohio / Kentucky"
+            tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) mb-4 font-serif"
+            value="Ohio"
             readOnly
             disabled
             required
@@ -128,13 +128,13 @@ const CustomerInfo = ({ setInvalid, info, setInfo }) => {
       </div>
 
       <div tw="flex flex-col">
-        <label htmlFor="msg" tw="text-gray-500 text-sm mb-2">
+        <label htmlFor="msg" tw="text-gray-500 text-sm mb-2 font-serif">
           Message (optional)
         </label>
         <textarea
           id="msg"
           rows="4"
-          tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-blue-700 ring ring-opacity-50) resize-none"
+          tw="bg-gray-100 rounded py-2 px-4 focus:(outline-none ring-red-700 ring ring-opacity-50) resize-none font-serif"
           placeholder="Type your message here..."
           value={msg}
           onChange={(e) => setMsg(e.target.value)}

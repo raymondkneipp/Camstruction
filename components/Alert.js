@@ -15,7 +15,7 @@ const Alert = ({ text, url }) => {
 
   return (
     <Link href={url} passHref>
-      <a tw="bg-blue-700 hocus:(bg-blue-800 outline-none underline) transition text-white">
+      <a tw="bg-red-700 hocus:(bg-red-800 outline-none underline) transition text-white">
         <StyledContainer>
           <Image
             src="/icons/iconmonstr-time-3.svg"
@@ -24,7 +24,7 @@ const Alert = ({ text, url }) => {
             layout="fixed"
             alt="Calendar"
           />
-          <p tw="font-medium text-sm sm:text-base lg:text-lg capitalize text-center ml-4">
+          <p tw="font-medium text-sm sm:text-base lg:text-lg capitalize text-center ml-4 font-serif">
             {text}
           </p>
         </StyledContainer>

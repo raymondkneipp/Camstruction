@@ -4,77 +4,55 @@ import Container from "../components/Container";
 import tw from "twin.macro";
 import CTA from "../components/CTA";
 
-const StyledContainer = tw(Container)`grid gap-8 sm:(gap-0)`;
+const StyledContainer = tw(Container)`grid gap-8 md:(gap-0)`;
 
 const About = () => {
   return (
     <Layout title="About Us">
+      <h1 tw="text-3xl sm:text-5xl md:text-6xl lg:text-7xl my-10 font-medium font-sans text-center">
+        About Us
+      </h1>
       <StyledContainer>
-        <article tw="grid gap-8 sm:grid-cols-2 sm:gap-0">
+        <article tw="grid gap-8 md:grid-cols-2 md:gap-0">
           <Image
-            src="/images/10.jpeg"
+            src="/images/logo.png"
             width={300}
             height={200}
             layout="responsive"
             objectFit="cover"
-            alt="Two mowers sitting on cut grass"
+            alt="Logo"
           />
-          <div tw="sm:p-8 self-center">
-            <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-black mb-2">
+          <div tw="md:p-8 md:pr-0 self-center">
+            <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-black mb-2 font-sans">
               Who We Are
             </h2>
-            <p tw="text-base font-light text-gray-500 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+            <p tw="text-base font-light text-gray-500 mt-2 font-sans">
+              Cam'struction Renovation is owned and managed by Camren Mofford.
+              We have over 8 years of experience providing our clients with
+              exceptional remodeling services for every part of their home.
             </p>
           </div>
         </article>
 
-        <article tw="grid gap-8 sm:grid-cols-2 sm:gap-0">
+        <article tw="grid gap-8 md:grid-cols-2 md:gap-0">
           <Image
-            src="/images/8.jpeg"
+            src="/images/grid.png"
             width={300}
             height={200}
             layout="responsive"
             objectFit="cover"
-            alt="Perfectly cut grass"
+            alt="Renovations"
           />
-          <div tw="sm:order-first sm:p-8 self-center">
-            <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-black mb-2">
-              Engineering, Detail, & Passion
+          <div tw="md:order-first md:p-8 md:pl-0 self-center">
+            <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-black mb-2 font-sans">
+              What We Do
             </h2>
-            <p tw="text-base font-light text-gray-500 mt-2">
-              We use the very latest engineered best practices to give you the
-              results you can count on. We pride ourselves in having very high
-              attention to detail and want to meet every need you have for your
-              drainage needs. Our team is passionate and cares about each job we
-              do. We extend that level of care to every job.
-            </p>
-          </div>
-        </article>
-
-        <article tw="grid gap-8 sm:grid-cols-2 sm:gap-0">
-          <Image
-            src="/images/6.jpeg"
-            width={300}
-            height={200}
-            layout="responsive"
-            objectFit="cover"
-            alt="Dew on grass"
-          />
-          <div tw="sm:p-8 self-center">
-            <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-black mb-2">
-              Our Mission
-            </h2>
-            <p tw="text-base font-light text-gray-500 mt-2">
-              Plus Drainage is your professional drainage solution with the
-              personal touch of a local company. Our engineers and employees
-              have a combined 40+ years in this market, delivering solutions to
-              drainage issues.
+            <p tw="text-base font-light text-gray-500 mt-2 font-sans">
+              We offer remodeling services in the Cincinnati and Florence area.
+              You can count on us to give new life to all areas of your home
+              including your kitchen, bathroom, basement, and even your outdoor
+              living space. We get things done the right way in a timely manner
+              while staying within your budget.
             </p>
           </div>
         </article>

@@ -41,13 +41,15 @@ const ServiceItem = ({
             vertical && tw`col-span-full! order-2!`,
           ]}
         >
-          <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-black my-2">
+          <h2 tw="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-black my-2 font-sans">
             {header}
           </h2>
-          <h3 tw="text-lg sm:text-xl md:text-xl lg:text-xl font-normal text-gray-500 my-2">
+          <h3 tw="text-lg sm:text-xl md:text-xl lg:text-xl font-normal text-gray-500 my-2 font-sans">
             {subheader}
           </h3>
-          <p tw="text-base font-light text-gray-500 my-2">{paragraph}</p>
+          <p tw="text-base font-light text-gray-500 my-2 font-serif">
+            {paragraph}
+          </p>
         </div>
       </article>
     </>

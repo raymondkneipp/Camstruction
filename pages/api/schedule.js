@@ -28,10 +28,10 @@ export default async function (req, res) {
         },
         {
           to: email,
-          subject: "Drainage Estimate",
+          subject: "Renovation Estimate",
         },
       ],
-      from: "Plus Drainage <notification@raymondkneipp.com>",
+      from: "Cam'struction Renovation <notification@raymondkneipp.com>",
       text: `Cost: Free\nDuration: 1 hour\nDate: ${
         newDateOfQuote.getMonth() + 1
       } / ${newDateOfQuote.getDate()} / ${newDateOfQuote.getFullYear()}\nTime: ${timeOfQuote}\nName: ${name}\nEmail: ${email}\nPhone Number: ${
@@ -40,8 +40,8 @@ export default async function (req, res) {
         safeMsg || "Not Provided"
       }`,
       html: `
-      <h1>Plus Drainage</h1>
-			<h2>Drainage Service Quote</h2>
+      <h1>Cam'struction Renovation</h1>
+			<h2>Renovation Quote</h2>
 			<p><strong>Cost:</strong> Free</p>
 			<p><strong>Duration:</strong> 1 hour</p>
 			<p><strong>Date:</strong> ${

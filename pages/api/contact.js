@@ -19,11 +19,11 @@ export default async function (req, res) {
 
     const mail = {
       to: "raymond.f.kneipp@gmail.com",
-      from: "Plus Drainage <notification@raymondkneipp.com>",
+      from: "Cam'struction Renovation <notification@raymondkneipp.com>",
       subject: "Message From Customer",
       text: `Customer Name: ${name}\nCustomer Email: ${email}\nMessage: ${safeMsg}`,
       html: `
-      <h1>Plus Drainage</h1>
+      <h1>Cam'struction Renovation</h1>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Message:</strong> ${safeMsg}</p>

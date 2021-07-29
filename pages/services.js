@@ -23,50 +23,77 @@ const Services = () => {
 
   return (
     <Layout title="Services">
+      <h1 tw="text-3xl sm:text-5xl md:text-6xl lg:text-7xl my-10 font-medium font-sans text-center">
+        Services We Offer
+      </h1>
       <StyledContainer>
         <ServiceItem
-          image="7.jpeg"
-          header="Yard Drainage"
-          subheader="Lorem ipsum dolor"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          image="kitchen.jpg"
+          header="Kitchen Remodeling"
+          subheader="Let Us Build Your Perfect Kitchen"
+          paragraph="Whether you are looking for a sleek modern look or a rustic homely feel, We will help you create the perfect kitchen of your dreams."
           vertical
         />
         <ServiceItem
-          image="5.jpeg"
-          header="Basement Waterproofing"
-          subheader="Lorem ipsum dolor"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          image="bath.jpg"
+          header="Bathroom Remodeling"
+          subheader="Create The Ultimate Bathroom"
+          paragraph="We can bring life back to your bathroom with new plumbing, electrical, lighting, tile, and cabinetry."
           vertical
         />
         <ServiceItem
-          image="1.jpeg"
-          header="Downspout Water Management"
-          subheader="Lorem ipsum dolor"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          vertical
-        />
-
-        <ServiceItem
-          image="3.jpeg"
-          header="French Drains"
-          subheader="Lorem ipsum dolor"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          image="decking.jpg"
+          header="Decking"
+          subheader="Bring Life To Your Backyard"
+          paragraph="Create the perfect outdoor living space that's sure to leave a lasting impression."
           vertical
         />
 
         <ServiceItem
-          image="8.jpeg"
-          header="Window Well Drains"
-          subheader="Lorem ipsum dolor"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          image="flooring.jpg"
+          header="Flooring"
+          subheader="Hard Wood, Tile, & More"
+          paragraph="Make your home feel a little more elegant with hard wood and tile flooring."
           vertical
         />
 
         <ServiceItem
-          image="9.png"
-          header="Sump Pumps & More..."
-          subheader="Lorem ipsum dolor"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          image="tile.jpg"
+          header="Tile"
+          subheader="Tiling Showers & Backsplashes"
+          paragraph="Add a little bit of stone accents anywhere in your home. Add tile to your kitchen or bathroom backsplash or in your bath and shower."
+          vertical
+        />
+
+        <ServiceItem
+          image="patios.jpg"
+          header="Patios"
+          subheader="Bring Your Life Outside"
+          paragraph="Create the perfect outdoor living space without the maintenance of wooden decks. Patios are a great place to have parties or just enjoy some sunshine."
+          vertical
+        />
+
+        <ServiceItem
+          image="fencing.jpg"
+          header="Fencing"
+          subheader="Outdoor Privacy"
+          paragraph="Give your animals a place to run around or add some privacy to your outdoor living area."
+          vertical
+        />
+
+        <ServiceItem
+          image="framing.jpg"
+          header="Framing And Additions"
+          subheader="Extend Your Home"
+          paragraph="We can help you create a new, larger living area for your home."
+          vertical
+        />
+
+        <ServiceItem
+          image="drywall.jpg"
+          header="Drywall, Concrete, And More"
+          subheader="Make Your Home Unique"
+          paragraph="We can help you change up your floor plan, add some stone  indoor and outdoor, and much more!"
           vertical
         />
       </StyledContainer>
